@@ -1,0 +1,7 @@
+cash_displayer/config/*
+!cash_displayer/config/.keep
+build
+*.egg-info
+__pycache__
+*.pyc
+dist
