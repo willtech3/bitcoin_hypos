@@ -4,17 +4,17 @@ import subprocess
 #version = subprocess.check_output("git describe --abbrev=0", shell=True).decode("utf-8").strip()[1:]
 
 setup(
-  name='cash_displayer',
+  name='bitcoin_hypos',
   #version=version,
   packages=find_packages(),
-  package_data={'cash_displayer.config': ['*.ini']},
+  package_data={'bitcoin_hypos.config': ['*.ini']},
   include_package_data=True,
   install_requires=[
      'termcolor',
   ],
   entry_points='''
       [console_scripts]
-      hypo=cash_displayer.scripts.hypo:run
-      real=cash_displayer.scripts.real:run
+      hypo=bitcoin_hypos.scripts.hypo:run
+      real=bitcoin_hypos.scripts.real:run
       ''',
 )

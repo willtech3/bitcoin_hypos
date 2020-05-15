@@ -1,7 +1,7 @@
 import argparse
-from cash_displayer.lib.spot_price import SpotPriceRetriever
-from cash_displayer.lib.calc_leftover import CashLeft
-from cash_displayer.lib.display_results import Results
+from bitcoin_hypos.lib.spot_price import SpotPriceRetriever
+from bitcoin_hypos.lib.calc_leftover import CashLeft
+from bitcoin_hypos.lib.display_results import Results
 
 def run():
   parser = argparse.ArgumentParser(description='Bitcoin Net Worth Calculator')

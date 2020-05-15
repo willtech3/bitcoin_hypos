@@ -1,5 +1,5 @@
-cash_displayer/config/*
-!cash_displayer/config/.keep
+bitcoin_hypos/config/*
+!bitcoin_hypos/config/.keep
 build
 *.egg-info
 __pycache__

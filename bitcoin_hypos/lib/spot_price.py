@@ -1,6 +1,7 @@
-from cash_displayer.lib.config_reader import ConfigReader
-from cash_displayer.lib.config_types import ConfigTypes
+from bitcoin_hypos.lib.config_reader import ConfigReader
+from bitcoin_hypos.lib.config_types import ConfigTypes
 from coinbase.wallet.client import Client
+import requests
 
 class SpotPriceRetriever():
 
@@ -11,5 +12,8 @@ class SpotPriceRetriever():
     self.client = Client(key, secret)
 
   def get_price(self):
-    spot_price =  self.client.get_spot_price(current_pair = 'BTC-USD')
+    try:
+      spot_price = self.client.get_spot_price(current_pair = 'BTC-USD')
+    except requests.HttpError as exception:
+      print(exception)
     return round(float(spot_price['amount']),8)

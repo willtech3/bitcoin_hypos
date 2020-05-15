@@ -3,7 +3,7 @@ from termcolor import colored
 class Results(object):
 
   @staticmethod
-  def display(amount):
+  def display_usd(amount):
     amount = round(amount, 2)
     display_amount = '$' + str(amount)
     if amount < 0:

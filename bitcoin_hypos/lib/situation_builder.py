@@ -1,8 +1,8 @@
 import os
 import inspect
-from cash_displayer.lib.config_reader import ConfigReader
-from cash_displayer.lib.config_types import ConfigTypes
-from cash_displayer.lib.spot_price import SpotPriceRetriever
+from bitcoin_hypos.lib.config_reader import ConfigReader
+from bitcoin_hypos.lib.config_types import ConfigTypes
+from bitcoin_hypos.lib.spot_price import SpotPriceRetriever
 
 #TODO: Reconsider whether the code in this class
 # should go somewhere else or have a different name
