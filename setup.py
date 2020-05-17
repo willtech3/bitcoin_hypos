@@ -9,7 +9,7 @@ setup(
   package_data={'bitcoin_hypos.config': ['*.ini']},
   include_package_data=True,
   packages=find_namespace_packages(),
-  install_requires=['coinbase']
+  install_requires=['coinbase'],
   entry_points='''
       [console_scripts]
       hypo=bitcoin_hypos.scripts.hypo:run
