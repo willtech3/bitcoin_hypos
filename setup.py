@@ -11,6 +11,8 @@ setup(
   include_package_data=True,
   install_requires=[
      'termcolor',
+     'coinbase',
+     'requests'
   ],
   entry_points='''
       [console_scripts]
