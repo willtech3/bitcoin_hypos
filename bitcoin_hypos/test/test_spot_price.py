@@ -3,7 +3,7 @@ import requests
 import requests_mock
 import json
 from requests import HTTPError
-from bitcoin_hypose.lib.config_reader import ConfigReader
+from bitcoin_hypos.lib.config_reader import ConfigReader
 from bitcoin_hypos.lib.config_types import ConfigTypes
 from bitcoin_hypos.lib.spot_price import SpotPriceRetriever
 from coinbase.wallet.client import Client

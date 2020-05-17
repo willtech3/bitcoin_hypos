@@ -9,11 +9,7 @@ setup(
   packages=find_packages(),
   package_data={'bitcoin_hypos.config': ['*.ini']},
   include_package_data=True,
-  install_requires=[
-     'termcolor',
-     'coinbase',
-     'requests'
-  ],
+  find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
   entry_points='''
       [console_scripts]
       hypo=bitcoin_hypos.scripts.hypo:run
