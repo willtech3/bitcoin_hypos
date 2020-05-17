@@ -14,5 +14,5 @@ def run():
   current_btc_price = SpotPriceRetriever().get_price()
   if input_args.price:
     current_btc_price = input_args.price
-  cash_left = CashLeft(current_btc_price, input_args.btc, input_args.keep, input_args.debts).calc_leftover()
+  cash_left = CashLeft(current_btc_price, input_args.btc, input_args.keep, input_args.debt).calc_leftover()
   Results.display_usd(cash_left)
