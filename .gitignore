@@ -1,5 +1,6 @@
 bitcoin_hypos/config/*
 !bitcoin_hypos/config/.keep
+!bitcoin_hypos/config/__init__.py
 build
 *.egg-info
 __pycache__

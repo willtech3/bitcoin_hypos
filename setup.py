@@ -10,7 +10,6 @@ setup(
   include_package_data=True,
   packages=find_namespace_packages(),
   install_requires=[
-     #'pycryptodome',
      'coinbase'
   ],
   entry_points='''

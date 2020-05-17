@@ -6,9 +6,9 @@ from bitcoin_hypos.lib.display_results import Results
 def run():
   parser = argparse.ArgumentParser(description='Bitcoin Net Worth Calculator')
   parser.add_argument('btc', help='the amount of Bitcoin you own', nargs="+", type=float)
+  parser.add_argument('debt', help='the amount of debt in USD that you would cover by potentially selling Bitcoin', nargs="+", type=float)
   parser.add_argument('--price', '-p', help='a price you set, instead of the default current spot price', type=float, nargs="?")
   parser.add_argument('--keep', '-k', help='the amount of Bitcoin you don\'t intend to sell to cover any debts', type=float, nargs="?", const=0.0, default=0.0)
-  parser.add_argument('--debts', '-d', help='a single value or list of debts that you would cover if you sold your Bitcoin', nargs="+", type=float, default=[])
   input_args = parser.parse_args()
 
   current_btc_price = SpotPriceRetriever().get_price()
