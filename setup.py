@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, find_namespace_packages
 import subprocess
 
 #version = subprocess.check_output("git describe --abbrev=0", shell=True).decode("utf-8").strip()[1:]
@@ -6,10 +6,9 @@ import subprocess
 setup(
   name='bitcoin_hypos',
   #version=version,
-  packages=find_packages(),
   package_data={'bitcoin_hypos.config': ['*.ini']},
   include_package_data=True,
-  install_requires = find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
+  packages=find_namespace_packages(),
   entry_points='''
       [console_scripts]
       hypo=bitcoin_hypos.scripts.hypo:run
