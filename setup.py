@@ -10,7 +10,8 @@ setup(
   include_package_data=True,
   packages=find_namespace_packages(),
   install_requires=[
-     'coinbase'
+     'coinbase',
+     'termcolor'
   ],
   entry_points='''
       [console_scripts]
